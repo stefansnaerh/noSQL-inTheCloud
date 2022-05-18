@@ -7,7 +7,7 @@ const cors = require('cors');
 const PORT = 5001; //we will use port 5001
 
 const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://stefansnaer:kelimus1@cluster0.lcv2l.mongodb.net/test?retryWrites=true&w=majority"
+const uri = "mongodb+srv://stefansnaer:@cluster0.lcv2l.mongodb.net/test?retryWrites=true&w=majority"
 const client = new MongoClient(uri, { useNewUrlParser: true });
 
 app.use(cors());//telling express to use the cors middleware
